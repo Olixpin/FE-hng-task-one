@@ -1,0 +1,16 @@
+#profile-img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 5.5px solid #ebe9fe;
+  margin-bottom: 24px;
+  border: 1px solid green;
+}
+
+.profile > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 56px;
+}
