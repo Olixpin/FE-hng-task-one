@@ -16,3 +16,10 @@
   text-align: center;
   color: #667085;
 }
+
+/* display none when screen size is mobile */
+@media (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}

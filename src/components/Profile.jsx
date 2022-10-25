@@ -1,9 +1,19 @@
 import React from "react";
 import "./Profile.css";
+import { ReactComponent as Share } from "../assets/share.svg";
+import { ReactComponent as Share2 } from "../assets/share2.svg";
 
 const Profile = (props) => {
   return (
     <div className="profile">
+      <Share />
+      {/* Create a tooltip */}
+      <div className="tooltip">
+        <span className="tooltiptext">Click to share</span>
+      </div>
+      <div>
+        <Share2 id="share2" />
+      </div>
       <img
         src="https://avatars.githubusercontent.com/u/29031558?v=4"
         alt="profile image"
