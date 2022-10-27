@@ -1,6 +1,6 @@
 import React from "react";
 import "./Profile.css";
-import { ReactComponent as Share } from "../assets/share.svg";
+import { ReactComponent as Share } from "../assets/Share.svg";
 import { ReactComponent as Share2 } from "../assets/share2.svg";
 
 const Profile = (props) => {
