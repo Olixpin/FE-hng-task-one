@@ -20,6 +20,9 @@
 /* display none when screen size is mobile */
 @media (max-width: 768px) {
   .footer {
-    display: none;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 24px;
   }
 }
