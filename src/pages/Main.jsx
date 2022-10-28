@@ -24,7 +24,7 @@ const Main = () => {
       />
       <MainOption
         title="Python Books"
-        link="https://books.zuri.team/python-for-beginners?ref_id=%3Cyourslackname%3E"
+        link="https://books.zuri.team/python-for-beginners?ref_id=%3COlix%3E"
         id="book_python"
       />
       <MainOption
