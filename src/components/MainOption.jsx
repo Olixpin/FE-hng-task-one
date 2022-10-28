@@ -6,9 +6,9 @@ const MainOption = (props) => {
 
   return (
     <div className="main-option">
-      <button>
-        <a href={link}>{title}</a>
-      </button>
+      <a className="btn" href={link} id={id}>
+        {title}
+      </a>
     </div>
   );
 };

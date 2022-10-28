@@ -2,25 +2,30 @@
   width: 100%;
 }
 
-.main-option > button {
+.main-option > .btn {
   width: 100%;
+  display: inline-block;
   height: 100%;
   border: none;
   background-color: #eaecf0;
   border-radius: 8px;
   padding: 24px 32px;
   cursor: pointer;
-}
-
-.main-option > button:hover {
-  background-color: #dfe1e6;
-}
-
-.main-option > button > a {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
   color: #101828;
   text-decoration: none;
+}
+
+.main-option > .btn:active,
+.main-option > .btn:focus,
+.main-option > .btn:visited {
+  background-color: none;
+  outline: none;
+  text-decoration: none;
+}
+.main-option > .btn:hover {
+  background-color: #dfe1e6;
 }
