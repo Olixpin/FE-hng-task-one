@@ -19,7 +19,7 @@ const Profile = (props) => {
         <img
           src="https://avatars.githubusercontent.com/u/29031558?v=4"
           alt="profile image"
-          id="profile-img"
+          id="profile__img"
           className="profile-img"
         />
       </div>
@@ -36,7 +36,7 @@ const Profile = (props) => {
           display: "none",
         }}
       >
-        Noibi Abdulrasaq O.
+        Olix
       </h2>
     </div>
   );
