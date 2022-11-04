@@ -82,6 +82,16 @@ export default function Contact() {
     } else {
       console.log("Valid Form");
       setNotValid(false);
+      setFormData({
+        firstname: "",
+        lastname: "",
+        email: "",
+        message: "",
+        terms: false,
+      });
+
+      // remove checked from checkbox
+      document.getElementById("terms").checked = false;
     }
   };
 
