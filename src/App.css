@@ -17,10 +17,6 @@ body {
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   text-align: center;
   padding: 144px 64px;

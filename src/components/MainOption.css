@@ -1,8 +1,4 @@
-.main-option {
-  width: 100%;
-}
-
-.main-option > .btn {
+.btn {
   width: 100%;
   display: inline-block;
   height: 100%;
@@ -19,13 +15,13 @@
   text-decoration: none;
 }
 
-.main-option > .btn:active,
-.main-option > .btn:focus,
-.main-option > .btn:visited {
+.btn:active,
+.btn:focus,
+.btn:visited {
   background-color: none;
   outline: none;
   text-decoration: none;
 }
-.main-option > .btn:hover {
+.btn:hover {
   background-color: #dfe1e6;
 }

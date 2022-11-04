@@ -3,6 +3,7 @@ import MainOption from "../components/MainOption";
 import { ReactComponent as Github } from "../assets/github.svg";
 import { ReactComponent as Slack } from "../assets/slack.svg";
 import "./Main.css";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -37,6 +38,10 @@ const Main = () => {
         link="https://books.zuri.team/design-rules"
         id="book_design"
       />
+
+      <Link to="/contact" className="btn" id="contact">
+        Contact me
+      </Link>
 
       <div className="social-media">
         <a href="https://github.com/Olixpin">

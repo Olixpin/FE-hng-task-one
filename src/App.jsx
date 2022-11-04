@@ -1,15 +1,16 @@
 import React from "react";
-import Main from "./pages/Main";
-import Profile from "./components/Profile";
-import Footer from "./components/Footer";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
     <div className="app">
-      <Profile />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 };
