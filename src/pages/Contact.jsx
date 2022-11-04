@@ -80,6 +80,7 @@ const ContactStyles = styled.div`
   margin: 0 auto;
   max-width: 720px;
   text-align: left;
+  margin-bottom: 188px;
 
   * {
     width: 100%;
@@ -184,6 +185,7 @@ const ContactStyles = styled.div`
       font-size: 16px;
       line-height: 24px;
       color: #ffffff;
+      cursor: pointer;
     }
   }
 `;
