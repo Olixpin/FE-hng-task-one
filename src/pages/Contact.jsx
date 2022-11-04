@@ -81,6 +81,7 @@ export default function Contact() {
       setNotValid(true);
     } else {
       console.log("Valid Form");
+      alert("Thank you for your message!");
       setNotValid(false);
       setFormData({
         firstname: "",
@@ -117,6 +118,9 @@ export default function Contact() {
                 placeholder="Enter your first name"
                 value={firstname}
                 onChange={handleChange}
+                className={
+                  notValid && firstname.length <= 0 ? "error" : "valid"
+                }
               />
               <span>This is a hint text to help user.</span>
             </div>
@@ -130,6 +134,7 @@ export default function Contact() {
                 value={lastname}
                 onChange={handleChange}
                 required={true}
+                className={notValid && lastname.length <= 0 ? "error" : "valid"}
               />
               <span>This is a hint text to help user.</span>
             </div>
@@ -145,6 +150,11 @@ export default function Contact() {
               value={email}
               onChange={handleChange}
               required={true}
+              className={
+                notValid && email.length && validEmailRegex.test(email) <= 0
+                  ? "error"
+                  : "valid"
+              }
             />
             <span>This is a hint text to help user.</span>
           </div>
