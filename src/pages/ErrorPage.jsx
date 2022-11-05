@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as ArrowLeft } from "../assets/arrow-left.svg";
@@ -6,6 +6,23 @@ import Footer from "../components/Footer";
 
 const ErrorPage = () => {
   const navigate = useNavigate();
+
+  // get the size of the winoww whenit's 768px or less
+  const [isMobileWidth, setIsMobileWidth] = React.useState(
+    window.innerWidth <= 768
+  );
+
+  // track the size of the window
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileWidth(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log(isMobileWidth);
+
   return (
     <>
       <ErrorStyled>
@@ -24,7 +41,8 @@ const ErrorPage = () => {
           <Link to="/">Take me home</Link>
         </div>
       </ErrorStyled>
-      <Footer />
+      {/* remove footer when its mobile */}
+      {!isMobileWidth && <Footer />}
     </>
   );
 };
@@ -172,11 +190,5 @@ const ErrorStyled = styled.div`
         align-items: center;
         display: block; 
       }
-      
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 64px 16px;
-    padding-bottom: 32px;
   }
 `;
