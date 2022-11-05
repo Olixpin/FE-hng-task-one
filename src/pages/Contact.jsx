@@ -151,7 +151,8 @@ export default function Contact() {
               onChange={handleChange}
               required={true}
               className={
-                notValid && email.length && validEmailRegex.test(email) <= 0
+                (notValid && email.length <= 0) ||
+                validEmailRegex.test(email) === !notValid
                   ? "error"
                   : "valid"
               }
@@ -195,7 +196,7 @@ export default function Contact() {
           </div>
 
           <button
-            id="btn_submit"
+            id="btn__submit"
             type="submit"
             onClick={handleSubmit}
             disabled={!terms}
