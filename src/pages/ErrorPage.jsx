@@ -172,5 +172,11 @@ const ErrorStyled = styled.div`
         align-items: center;
         display: block; 
       }
+      
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 64px 16px;
+    padding-bottom: 32px;
   }
 `;
